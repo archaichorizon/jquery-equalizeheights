@@ -35,7 +35,9 @@
             </div>
             <script type="text/javascript">
                 /*globals jQuery*/
-                jQuery('#test_1 > div:eq(0), #test_1 > div:eq(1)').equalizeHeights();
+                jQuery(function () {
+                    jQuery('#test_1 > div:eq(0), #test_1 > div:eq(1)').equalizeHeights();
+                });
             </script>
         </div>
 
@@ -62,7 +64,9 @@
             </div>
             <script type="text/javascript">
                 /*globals jQuery*/
-                jQuery('#test_2 > div').equalizeHeights();
+                jQuery(function () {
+                    jQuery('#test_2 > div').equalizeHeights();
+                });
             </script>
         </div>
     </body>
