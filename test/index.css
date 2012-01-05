@@ -1,0 +1,29 @@
+
+body {
+    font-family: georgia, serif;
+    font-size: .75em;
+}
+
+.test {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 2px solid #eee;
+}
+
+.test h2 {
+    text-align: center;
+}
+
+.test > div {
+    float: left;
+    width: 150px;
+    background: #eee;
+    margin-right: 1em;
+    padding: 1em;
+}
+
+.test > div.item_last {
+    margin-right: 0;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>jquery-equalizeheights</title>
+        <link rel="stylesheet" href="index.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="../include/jquery.equalizeheights.js"></script>
+    </head>
+
+    <body>
+        <h1>jquery-equalizeheights</h1>
+
+        <div id="test_1" class="test">
+            <h2>Test 1</h2>
+            <p>First two columns.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+            </div>
+            <div class="item_last">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+            </div>
+            <script type="text/javascript">
+                /*globals jQuery*/
+                jQuery('#test_1 > div:eq(0), #test_1 > div:eq(1)').equalizeHeights();
+            </script>
+        </div>
+
+        <div id="test_2" class="test">
+            <h2>Test 2</h2>
+            <p>All columns.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+            </div>
+            <div class="item_last">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
+                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+            </div>
+            <script type="text/javascript">
+                /*globals jQuery*/
+                jQuery('#test_2 > div').equalizeHeights();
+            </script>
+        </div>
+    </body>
+</html>
