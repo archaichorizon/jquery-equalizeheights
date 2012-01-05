@@ -1,5 +1,7 @@
 /*globals jQuery*/
 /**
+ * jquery-equalizeheights
+ * 
  * @copyright Copyright (c) 2012, Dan Bettles 
  * @author Dan Bettles <dan@archaichorizon.com>
  */
