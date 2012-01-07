@@ -14,24 +14,18 @@
 
         <div id="test_1" class="test">
             <h2>Test 1</h2>
-            <p>First two columns.</p>
+            <p>Column one and column two.</p>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
             <div class="item_last">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
             <script type="text/javascript">
                 /*globals jQuery*/
@@ -45,22 +39,16 @@
             <h2>Test 2</h2>
             <p>All columns.</p>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
             <div class="item_last">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ante nec eros lobortis
-                consectetur. Curabitur non fermentum ligula. Aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
             <script type="text/javascript">
                 /*globals jQuery*/
@@ -69,5 +57,35 @@
                 });
             </script>
         </div>
+
+        <div id="test_3" class="test">
+            <h2>Test 3</h2>
+            <p>All columns with a minimum pixel height.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            </div>
+            <div class="item_last">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            </div>
+            <script type="text/javascript">
+                /*globals jQuery*/
+                jQuery(function () {
+                    jQuery('#test_3 > div').equalizeHeights({ minHeight: 300 });
+                });
+            </script>
+        </div>
+
+        <script type="text/javascript">
+            /*globals jQuery*/
+            jQuery(function () {
+                jQuery('.test').equalizeHeights();
+            });
+        </script>
     </body>
 </html>
