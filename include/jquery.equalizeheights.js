@@ -11,18 +11,31 @@
  * @return jQuery
  */
 jQuery.fn.equalizeHeights = function (options) {
-    var actualOptions = options || {},
+    var actualOptions = jQuery.extend({
+            minHeight: 0,
+            resetHeightsBeforeEqualizing: true
+        }, options || {}),
         targetOuterHeight = 0;
 
     this.each(function () {
-        var currOuterHeight = jQuery(this).outerHeight(true);
+        var oThisEl = jQuery(this),
+            currOuterHeight = 0;
+
+        //We reset the height of elements before equalizing to ensure that if we're equalizing when the window is
+        //resized, that we don't end-up with unnecessarily tall containers when we expand the window after collapsing
+        //it.
+        if (actualOptions.resetHeightsBeforeEqualizing) {
+            oThisEl.height('auto');
+        }
+
+        currOuterHeight = oThisEl.outerHeight(true);
 
         if (currOuterHeight > targetOuterHeight) {
             targetOuterHeight = currOuterHeight;
         }
     });
 
-    if ((typeof actualOptions.minHeight !== 'undefined') && (targetOuterHeight < actualOptions.minHeight)) {
+    if (targetOuterHeight < actualOptions.minHeight) {
         targetOuterHeight = actualOptions.minHeight;
     }
 

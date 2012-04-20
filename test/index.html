@@ -84,7 +84,13 @@
         <script type="text/javascript">
             /*globals jQuery*/
             jQuery(function () {
-                jQuery('.test').equalizeHeights();
+                var equalizeHeightsOfTests = function () {
+                    jQuery('.test').equalizeHeights();
+                };
+
+                equalizeHeightsOfTests();
+
+                jQuery(window).resize(equalizeHeightsOfTests);
             });
         </script>
     </body>
